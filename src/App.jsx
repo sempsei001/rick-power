@@ -1,7 +1,10 @@
 import React from 'react';
 
-import Card from './components/card';
+import Header from './components/header';
+import CardContainer from './components/cardContainer';
+import Search from './components/search';
 
+// this is just an example
 const ricks = [
 	{
 		id: 1,
@@ -41,19 +44,16 @@ const ricks = [
 ]
 
 const App = () => (
-	<div className="flex flex-col flex-nowrap items-center mt-2 lg:flex-row lg:flex-wrap">
-		{
-			ricks.map(({id, name, gender, status, image}) => (
-				<Card
-					key={id}
-					name={name}
-					gender={gender}
-					status={status}
-					image={image}
-				/>
-			))
-		}
-	</div>
+	<>
+		<Search input="" />
+		<header>
+			<Header title="Welcome to Ricks deck!!!" />
+		</header>
+		<hr className="mt-6 mb-5 w-2/5 m-auto" />
+		<main>
+			<CardContainer characters={ricks} />
+		</main>
+	</>
 );
 
 export default App;

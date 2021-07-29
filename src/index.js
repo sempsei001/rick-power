@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-import './index.css';
+import './styles/index.css';
 
 ReactDOM.render(
-  <div className="bg-gray-300">
+  <div>
     <App />
   </div>,
   document.getElementById('root')

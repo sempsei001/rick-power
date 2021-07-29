@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = ({ name, gender, status, image }) => {
-  // lg:flex lg:items-center
   return (
     <div
 			className="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 mb-1 lg:py-4 lg:space-y-0 lg:space-x-6 lg:m-1.5">
